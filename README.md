@@ -24,7 +24,7 @@ Before using this C program, ensure that you have the following:
 
 - A C compiler installed on your system.
 - Basic understanding of C programming, including linked lists and memory allocation concepts.
-- Review: [Python-Style List Implementation in C](https://github.com/infinity-set/pylst)
+- Review: [Python List Class Implementation in C](https://github.com/infinity-set/pylst)
 
 ## Languages and Utilities Used
 
