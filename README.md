@@ -69,35 +69,67 @@ Before using this C program, ensure that you have the following:
 
 ### `pydict_new()`
 
-Creates a new empty Python-style dictionary.
+- Creates a new empty Python-style dictionary.
+  - **Python syntax:** 
+    ```python
+    new_dict = {}
+    ```
 
 ### `pydict_put(pydict *self, const char *key_string, const char *value_string)`
 
-Puts or updates a key-value pair in the Python-style dictionary.
+- Puts or updates a key-value pair in the Python-style dictionary.
+  - **Python syntax:** 
+    ```python
+    existing_dict[key_string] = value_string
+    ```
 
 ### `pydct_append(pydict *self, const char *key_string, const char *value_string)`
 
-Appends a new key-value pair to the Python-style dictionary.
+- Appends a new key-value pair to the Python-style dictionary.
+  - **Python syntax:** 
+    ```python
+    existing_dict[key_string] = value_string
+    ```
 
 ### `pydict_print(pydict *self)`
 
-Prints the contents of the Python-style dictionary.
+- Prints the contents of the Python-style dictionary.
+  - **Python syntax:** 
+    ```python
+    print(existing_dict)
+    ```
 
 ### `pydict_del(pydict *self)`
 
-Deletes the entire Python-style dictionary and frees memory.
+- Deletes the entire Python-style dictionary and frees memory.
+  - **Python syntax:** 
+    Note: Python handles memory management automatically, so no explicit deletion is required.
 
 ### `pydict_len(pydict *self)`
 
-Returns the length of the Python-style dictionary.
+- Returns the length of the Python-style dictionary.
+  - **Python syntax:** 
+    ```python
+    dict_length = len(existing_dict)
+    ```
 
 ### `pydict_get(pydict *self, const char *key_string)`
 
-Gets the value associated with a key in the Python-style dictionary.
+- Gets the value associated with a key in the Python-style dictionary.
+  - **Python syntax:** 
+    ```python
+    value = existing_dict.get(key_string)
+    ```
 
 ### `pydict_find(pydict *self, const char *key_string)`
 
-Finds a node in the Python-style dictionary based on the key.
+- Finds a node in the Python-style dictionary based on the key.
+  - **Python syntax:** 
+    ```python
+    if key_string in existing_dict:
+        # Node found
+    ```
+
 
 ## Usage
 
